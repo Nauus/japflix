@@ -8,7 +8,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-   
 </head>
 
 <body class="bg-dark">
@@ -18,14 +17,14 @@
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light"><img src="img/japflix.png" alt=""></h1>
                     <input type="search" class="form-control" name="buscar" id="searchInput"
-                        placeholder="Ej.: The Lion King">
+                        placeholder="Ej.: El Rey León">
                     <button class="btn btn-primary m-2" id="searchButton">Buscar</button>
                 </div>
             </div>
         </div>
 
         <div class="album">
-            <ul class="list-group container" id="movieList">
+            <ul class="list-group container" id="listaPeliculas">
             </ul>
         </div>
     </main>
@@ -36,21 +35,20 @@
                 <a href="#">Volver arriba</a>
             </p>
             <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/"
-                    target="_blank">Jovenes a Programar</a>.</p>
+                    target="_blank">Jóvenes a Programar</a>.</p>
             <p class="mb-1">Generado con fines estrictamente educativos.</p>
         </div>
     </footer>
 
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="movieOffcanvas" aria-labelledby="movieOffcanvasLabel">
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="detallePelicula" aria-labelledby="detallePeliculaLabel">
       <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="movieOffcanvasLabel">Detalles de la Película</h5>
-          <button type="button" id="closeModalButton" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title" id="detallePeliculaLabel">Detalles de la Película</h5>
+          <button type="button" id="cerrarDetalleButton" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
       </div>
-      <div class="offcanvas-body" id="modalContent">
-
+      <div class="offcanvas-body" id="contenidoDetalle">
+       
       </div>
   </div>
-  
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
